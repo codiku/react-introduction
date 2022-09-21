@@ -1,3 +1,3 @@
-export default function App() {
-    return <h1>This is the root component of our app :) </h1>
+export function App() {
+  return <h1>Welcome to the React world</h1>;
 }
