@@ -1,9 +1,9 @@
-export function Greetings() {
+export function Greetings(props) {
+  console.log(props);
   return (
-    <ul>
-      <li>Hello</li>
-      <li>my</li>
-      <li>friend !</li>
-    </ul>
+    <div>
+      Hi {props.firstName} {props.lastName} you are {props.age + 10}
+      {props.children}
+    </div>
   );
 }
