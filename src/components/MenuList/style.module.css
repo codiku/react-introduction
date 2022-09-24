@@ -1,0 +1,9 @@
+.menu_root{
+    border:solid 3px grey;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

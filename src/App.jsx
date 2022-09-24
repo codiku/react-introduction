@@ -1,13 +1,23 @@
-import "./global.css";
-import { Car } from "./components/Car/Car";
+import DisplayDifficulty from "./components/DisplayDifficulty/DisplayDifficulty";
+import MenuList from "./components/MenuList/MenuList";
+import s from "./style.module.css";
+import { useState } from "react";
+
 export function App() {
-  function hello(value) {
-    alert("Hello from <App/>" + value);
-  }
+  const [currentDifficulty, setCurrentDifficulty] = useState("");
+
   return (
     <div>
-      <p>I am the {"<App/>"}</p>
-      <Car onCarClick={hello} />
+      <h1 style={{ textAlign: "center", marginBottom: 100 }}>
+        Choose your React course difficulty
+      </h1>
+      <div className={s.root}>
+        <MenuList
+          selectedDifficulty={currentDifficulty}
+          onMenuItemClick={setCurrentDifficulty}
+        />
+        <DisplayDifficulty difficulty={currentDifficulty} />
+      </div>
     </div>
   );
 }

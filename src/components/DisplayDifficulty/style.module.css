@@ -1,0 +1,9 @@
+.difficulty_root{
+    height: 250px;
+    width: 250px;
+    border:solid 3px grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
