@@ -1,13 +1,10 @@
 import s from "./style.module.css";
-
-const DisplayDifficulty = (props) => {
+export function DisplayDifficulty(props) {
   return (
-    <div className={s.difficulty_root}>
+    <div className={s.container}>
       {props.difficulty
         ? `Difficulty set to ${props.difficulty}`
         : "No difficulty set"}
     </div>
   );
-};
-
-export default DisplayDifficulty;
+}
