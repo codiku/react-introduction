@@ -14,11 +14,20 @@ export const MenuListItem = (props) => {
     if (isHovered) {
       return "#a5e9ff";
     } else {
-      return "#eff0ef";
+      if (props.isSelected) {
+        return "#26baea";
+      } else {
+        return "#eff0ef";
+      }
     }
+  };
+
+  const onItemClick = () => {
+    props.onClick(props.difficulty);
   };
   return (
     <div
+      onClick={onItemClick}
       className={s.container}
       onMouseEnter={activate}
       onMouseLeave={deactivate}
