@@ -3,7 +3,7 @@ import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficu
 import { MenuList } from "./components/MenuList/MenuList";
 import s from "./style.module.css";
 export function App() {
-  const [currentDifficulty, setCurrentDifficulty] = useState("Insane");
+  const [currentDifficulty, setCurrentDifficulty] = useState("");
 
   const onMenuListItemClick = (difficulty) => {
     setCurrentDifficulty(difficulty);
