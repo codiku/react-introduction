@@ -1,12 +1,12 @@
-// Import React stuff
-import React from "react";
+// Import some react tools
 import ReactDOM from "react-dom/client";
-// Import our first root component : App
+// Import our first component : App
 import { App } from "./App";
-// Target the root tag in of our index.html and save its reference
+// Target the root div
 const rootDiv = document.getElementById("root");
-// Transform this root div into an object react can work with
+
+// Transform the root div into a react node
 const reactRoot = ReactDOM.createRoot(rootDiv);
-// Inject the App component into the react root div.
-// This way App becomes our highest component in the component three
+
+// Inject our App component into the react node
 reactRoot.render(<App />);
