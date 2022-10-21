@@ -1,3 +1,9 @@
+import { Greetings } from "./Greetings";
 export function App() {
-  return "Hello";
+  return (
+    <div>
+      <h1>Welcome to the React world</h1>
+      <Greetings />
+    </div>
+  );
 }
