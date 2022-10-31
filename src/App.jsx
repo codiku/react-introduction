@@ -1,13 +1,11 @@
 import "./global.css";
 import { Car } from "./components/Car/Car";
+import { Greetings } from "./components/Greetings/Greetings";
 export function App() {
-  function hello(value) {
-    alert("Hello from <App/>" + value);
-  }
   return (
     <div>
-      <p>I am the {"<App/>"}</p>
-      <Car onCarClick={hello} />
+      <Car />
+      <Greetings />
     </div>
   );
 }
