@@ -11,7 +11,7 @@ export function App() {
         doSomething={function () {
           console.log("Hello");
         }}
-        sunny={false}
+        isSunny={true}
       >
         <img src="https://i.picsum.photos/id/607/200/300.jpg?hmac=ZEvzqI62NudR3rgqTkRZzFnlEeOt9z-b_i8VdLoTgoI" />
       </Greetings>

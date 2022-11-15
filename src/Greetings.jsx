@@ -1,12 +1,10 @@
 export function Greetings(props) {
-  console.log("***", props);
-
   return (
     <ul>
       <li>Hello {props.firstName}</li>
       <li>your are {props.age} years old</li>
       <li>{props.children}</li>
-      {props.sunny && <ItsSunny />}
+      <li>{props.isSunny ? <ItsSunny /> : <ItsRainy />}</li>
     </ul>
   );
 }
