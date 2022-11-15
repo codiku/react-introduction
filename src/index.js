@@ -1,12 +1,14 @@
-// Import some react tools
+// Importer les outils React
 import ReactDOM from "react-dom/client";
-// Import our first component : App
+
+// Importer notre premier composant : App
 import { App } from "./App";
-// Target the root div
-const rootDiv = document.getElementById("root");
 
-// Transform the root div into a react node
-const reactRoot = ReactDOM.createRoot(rootDiv);
+// Cibler la div dont l'id est root
+const divRoot = document.getElementById("root");
 
-// Inject our App component into the react node
+// Créer un noeud racine react a partir de la div root
+const reactRoot = ReactDOM.createRoot(divRoot);
+
+// Injecter notre premier composant le noeud racine
 reactRoot.render(<App />);

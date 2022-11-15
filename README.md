@@ -1,6 +1,6 @@
 # React introduction
 
-## Getting started
+## Démarrer
 
 ```bash
 npm i
