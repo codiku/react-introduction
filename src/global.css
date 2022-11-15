@@ -1,0 +1,13 @@
+p {
+  color: red;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.box2 {
+  border: 5px solid black;
+}
