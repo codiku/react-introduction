@@ -1,13 +1,11 @@
-import "./global.css";
-import { Car } from "./components/Car/Car";
+import { DisplayDifficulty } from "./components/DisplayDifficulty/DisplayDifficulty";
+import { MenuList } from "./components/MenuList/MenuList";
+
 export function App() {
-  function hello(value) {
-    alert("Hello from <App/>" + value);
-  }
   return (
     <div>
-      <p>I am the {"<App/>"}</p>
-      <Car onCarClick={hello} />
+      {/*<DisplayDifficulty difficulty="Low" />*/}
+      <MenuList />
     </div>
   );
 }
