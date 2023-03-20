@@ -6,6 +6,7 @@ export function MenuList(props) {
     <div className={s.container}>
       {DIFFICULTIES.map((difficulty) => (
         <MenuListItem
+          key={difficulty}
           isSelected={props.difficulty === difficulty}
           onClick={props.onItemClick}
           difficulty={difficulty}
